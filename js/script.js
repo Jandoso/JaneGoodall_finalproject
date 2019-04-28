@@ -1,3 +1,23 @@
+var quote = document.getElementById("quote");
+window.addEventListener("scroll", quoteJaneScrool);
+function quoteJaneScrool() {
+    switch(window.screen.availWidth){
+        case 1600:
+          quote.classList.add("quote-show")
+          quote.classList.remove("quote-hidden")
+        break;
+    }
+    if(pageYOffset >= 1600){
+        quote.classList.add("quote-show")
+        quote.classList.remove("quote-hidden")
+     }
+     else{
+       quote.classList.remove("quote-show")
+        quote.classList.add("quote-hidden")
+     }
+    };
+
+
 (function(){
 
     var menuResponsivo = document.getElementById("menuResponsivo");
@@ -27,8 +47,6 @@ window.addEventListener("scroll", function(){
 
 })
 
-
-
 try {
     const buttonAutora = document.querySelector('.arrow')
     buttonAutora.addEventListener('click', function(e){
@@ -41,15 +59,4 @@ try {
     if(!buttonAutora) {
         console.log('estamos na pagina home')
     } 
-}
-
-//scrol reveal 
-var quoteJane = document.getElementById("quote");
-
-quoteJane.addEventListener("click", quoteJaneClick);
-
-function quoteJaneClick() {
-    alert('You have clicked me!');
-}
-
-  
+};
