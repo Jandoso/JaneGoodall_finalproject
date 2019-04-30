@@ -1,4 +1,3 @@
-# Jane_Goodall_finalproject
-Final project of {reprograma} Front end web development course
+## JANE GOODALL TRIBUTE PAGE
 
-https://jandoso.github.io/Jane_Goodall_finalproject/
+Page elaboreted as final project at Front End Web Development Course - {reprograma}
